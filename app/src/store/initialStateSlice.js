@@ -5,10 +5,9 @@ export const initialState = {
   viewState: {
     latitude: 37.88,
     longitude: -4.785,
-    zoom: 12,
-    pitch: 0,
+    zoom: 16,
+    pitch: 60,
     bearing: 0,
-    dragRotate: false,
   },
   basemap: DARK_MATTER,
   credentials: {
