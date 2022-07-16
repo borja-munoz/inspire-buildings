@@ -5,6 +5,7 @@ const slice = createSlice({
   initialState: {
     error: null,
     bottomSheetOpen: false,
+    currentView: 'construction-date',
   },
   reducers: {
     setError: (state, action) => {
@@ -12,6 +13,9 @@ const slice = createSlice({
     },
     setBottomSheetOpen: (state, action) => {
       state.bottomSheetOpen = action.payload;
+    },
+    setCurrentView: (state, action) => {
+      state.currentView = action.payload;
     },
   },
 });
@@ -23,3 +27,4 @@ export const setBottomSheetOpen = (payload) => ({
   type: 'app/setBottomSheetOpen',
   payload,
 });
+export const setCurrentView = (payload) => ({ type: 'app/setCurrentView', payload });
