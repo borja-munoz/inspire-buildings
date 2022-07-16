@@ -1,37 +1,22 @@
-import { VOYAGER } from '@carto/react-basemaps';
+import { DARK_MATTER } from '@carto/react-basemaps';
 import { API_VERSIONS } from '@deck.gl/carto';
 
 export const initialState = {
   viewState: {
-    latitude: 31.802892,
-    longitude: -103.007813,
-    zoom: 2,
+    latitude: 37.88,
+    longitude: -4.785,
+    zoom: 12,
     pitch: 0,
     bearing: 0,
     dragRotate: false,
   },
-  basemap: VOYAGER,
+  basemap: DARK_MATTER,
   credentials: {
     apiVersion: API_VERSIONS.V3,
     apiBaseUrl: 'https://gcp-us-east1.api.carto.com',
+    accessToken:
+      'eyJhbGciOiJIUzI1NiJ9.eyJhIjoiYWNfbHFlM3p3Z3UiLCJqdGkiOiI1YjI0OWE2ZCJ9.Y7zB30NJFzq5fPv8W5nkoH5lPXFWQP0uywDtqUg8y8c',
   },
   googleApiKey: '', // only required when using a Google Basemap
   googleMapId: '', // only required when using a Google Custom Basemap
-  oauth: {
-    domain: 'auth.carto.com',
-    // Type here your application client id
-    clientId: '',
-    scopes: [
-      'read:current_user',
-      'update:current_user',
-      'read:connections',
-      'write:connections',
-      'read:maps',
-      'write:maps',
-      'read:account',
-      'admin:account',
-    ],
-    audience: 'carto-cloud-native-api',
-    authorizeEndPoint: 'https://carto.com/oauth2/authorize', // only valid if keeping https://localhost:3000/oauthCallback
-  },
 };
