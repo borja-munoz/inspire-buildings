@@ -15,7 +15,7 @@ const slice = createSlice({
       state.bottomSheetOpen = action.payload;
     },
     setCurrentThematicMap: (state, action) => {
-      state.error = action.payload;
+      state.currentThematicMap = action.payload;
     },
   },
 });
