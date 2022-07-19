@@ -172,7 +172,7 @@ function Mobile() {
 function AppName() {
   return (
     <>
-      <strong>React</strong> Demo
+      INSPIRE&nbsp;&nbsp;<strong>Building Explorer</strong>
     </>
   );
 }
@@ -204,7 +204,12 @@ function NavigationMenu({ column: vertical }) {
         orientation={vertical ? 'vertical' : 'horizontal'}
         variant={vertical ? 'fullWidth' : 'standard'}
       >
-        <Tab label='Home' value='' component={NavLink} to={ROUTE_PATHS.DEFAULT} />
+        <Tab
+          label='Home'
+          value='buildings'
+          component={NavLink}
+          to={ROUTE_PATHS.DEFAULT}
+        />
         {/* [hygen] Import links */}
       </Tabs>
     </Grid>
