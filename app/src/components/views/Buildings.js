@@ -14,7 +14,7 @@ import {
   RadioGroup,
 } from '@material-ui/core';
 
-import { setCurrentView } from 'store/appSlice';
+import { setCurrentThematicMap } from 'store/appSlice';
 
 const useStyles = makeStyles(() => ({
   buildings: {
@@ -27,7 +27,7 @@ export default function Buildings() {
   const classes = useStyles();
   const [formValue, setFormValue] = useState('construction-date');
 
-  useEffect(() => {s
+  useEffect(() => {
     dispatch(addSource(buildingsSource));
 
     dispatch(
@@ -47,7 +47,7 @@ export default function Buildings() {
 
   const handleChange = (event) => {
     setFormValue(event.target.value);
-    dispatch(setCurrentView(event.target.value));
+    dispatch(setCurrentThematicMap(event.target.value));
   };
 
   return (
