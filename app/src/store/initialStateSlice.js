@@ -1,16 +1,15 @@
-import { VOYAGER } from '@carto/react-basemaps';
+import { DARK_MATTER } from '@carto/react-basemaps';
 import { API_VERSIONS } from '@deck.gl/carto';
 
 export const initialState = {
   viewState: {
-    latitude: 40,
-    longitude: -4,
-    zoom: 5,
-    pitch: 0,
+    latitude: 37.88,
+    longitude: -4.785,
+    zoom: 16,
+    pitch: 60,
     bearing: 0,
-    dragRotate: false,
   },
-  basemap: VOYAGER,
+  basemap: DARK_MATTER,
   credentials: {
     apiVersion: API_VERSIONS.V3,
     apiBaseUrl: 'https://gcp-us-east1.api.carto.com',

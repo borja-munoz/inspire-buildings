@@ -211,6 +211,13 @@ function NavigationMenu({ column: vertical }) {
           to={ROUTE_PATHS.DEFAULT}
         />
         {/* [hygen] Import links */}
+        <Tab
+          label='Buildings'
+          value='buildings'
+          component={NavLink}
+          to={ROUTE_PATHS.BUILDINGS}
+          className={classes.navLink}
+        />
       </Tabs>
     </Grid>
   );

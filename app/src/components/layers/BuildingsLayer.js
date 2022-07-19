@@ -73,16 +73,13 @@ export default function BuildingsLayer() {
           }
         }
       },
-      getLineColor: [0, 0, 0, 100],
-      getElevation: (d) => {
-        return d.properties.number_floors_above_ground * 3;
-      },
-      lineWidthMinPixels: 1,
-      pointRadiusMinPixels: 2,
       pickable: true,
       updateTriggers: {
         getFillColor: [currentThematicMap],
         ...cartoLayerProps.updateTriggers,
+      },
+      getElevation: (d) => {
+        return d.properties.number_floors_above_ground * 3;
       },
       onHover: (info) => {
         if (info?.object) {
