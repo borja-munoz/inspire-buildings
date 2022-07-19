@@ -5,6 +5,7 @@ const slice = createSlice({
   initialState: {
     error: null,
     bottomSheetOpen: false,
+    currentThematicMap: 'construction-date',
   },
   reducers: {
     setError: (state, action) => {
@@ -12,6 +13,9 @@ const slice = createSlice({
     },
     setBottomSheetOpen: (state, action) => {
       state.bottomSheetOpen = action.payload;
+    },
+    setCurrentThematicMap: (state, action) => {
+      state.error = action.payload;
     },
   },
 });
@@ -21,5 +25,9 @@ export default slice.reducer;
 export const setError = (payload) => ({ type: 'app/setError', payload });
 export const setBottomSheetOpen = (payload) => ({
   type: 'app/setBottomSheetOpen',
+  payload,
+});
+export const setCurrentThematicMap = (payload) => ({
+  type: 'app/setCurrentThematicMap',
   payload,
 });
