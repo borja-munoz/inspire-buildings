@@ -2,7 +2,7 @@ repo_name: borja-munoz/inspire-buildings
 report_id: 159b021318c263f9b043408881ce26bb
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T08:54:47+00:00'
+timestamp: '2024-02-29T18:35:17+00:00'
 requested_by: borja-munoz
 provider: github
 branch: main
@@ -109,7 +109,7 @@ tools:
   detection_source_url: https://github.com/borja-munoz/inspire-buildings
   detection_source: Repo Metadata
 - name: Prettier
-  description: 'Prettier is an opinionated code formatter. '
+  description: Prettier is an opinionated code formatter.
   website_url: https://prettier.io/
   version: 2.7.1
   license: MIT
